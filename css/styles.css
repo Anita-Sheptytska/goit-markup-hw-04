@@ -49,7 +49,6 @@
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-
 }
 
 .section {
@@ -125,6 +124,12 @@ ul {
     padding-top: 32px 0;
 }
 
+.list-nav::before {
+    content: ;
+    width: 16px;
+    height: 12px;
+    display: block;
+}
 
 .list-contact {
     display: flex;
@@ -160,9 +165,23 @@ ul {
 }
 
 .hero {
-    background-color: var(--main-bg-cl);
     text-align: center;
     padding: 200px 0;
+    background-color: #C4C4C4;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+        ),
+    url("/image/hero.jpg");
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    height: 600px;
+    max-width: 1600px;
+    background-repeat: no-repeat;
+    background-position: center;
+
 }
 
 .hero-container {
