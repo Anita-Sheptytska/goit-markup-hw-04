@@ -18,12 +18,14 @@
 
     /*Others*/
     --light-bd-cl: #EEEEEE;
+    --link-color: #AFB1B8;
+    --footer-bg: rgba(255, 255, 255, 0.1);
 }
 
 /*1.INDEX.HTML*/
 
 .page {
-    font-family:var(--main-font) ;
+    font-family:var(--main-font);
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
     color: var(--main-txt-cl);
@@ -137,10 +139,10 @@ ul {
     display: block;
 }
 
-.svg-contacts {
+.icon {
     margin-right: 10px;
     fill: currentColor;
-
+    text-decoration: none;
 }
 
 .list-contact {
@@ -268,6 +270,7 @@ ul {
     border-radius: 4px;
 }
 
+
 /*Чим ми займаємось*/
 
 .projects {
@@ -312,6 +315,7 @@ ul {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--dark-txt-cl);
+    margin-bottom: 16px;
 }
 
 .team-list {
@@ -335,9 +339,30 @@ ul {
     padding: 0;
 }
 
+.social-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-list .social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: var(--link-color);
+}
+
 .social-link:hover,
 .social-link:focus {
     background-color: var(--accent-bg-cl);
+}
+
+.social-link:hover .link-icon,
+.social-link:focus .link-icon {
+    fill: #ffffff;
 }
 
 /*Клієнти*/
@@ -414,6 +439,50 @@ ul {
 .logo-footer {
     display: block;
     margin-bottom: 20px;
+}
+
+.footer-container {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-list {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--light-txt-cl);
+    margin-bottom: 20px;
+}
+
+.footer-social {
+    margin-left: 70px;
+}
+
+.footer-social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--footer-bg);
+}
+
+.footer-social-link .icon{
+    fill: #ffffff;
+    margin: 0;
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+    background-color: var(--accent-bg-cl);
 }
 
 /*2.PORTFOLIO.HTML*/
